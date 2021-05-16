@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C35D9A6263885BC0064FD95 /* ResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C35D9A5263885BC0064FD95 /* ResultVC.swift */; };
 		1C4C3AC1263732D9001E6973 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4C3AC0263732D9001E6973 /* AppDelegate.swift */; };
 		1C4C3AC3263732D9001E6973 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4C3AC2263732D9001E6973 /* SceneDelegate.swift */; };
-		1C4C3AC5263732D9001E6973 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4C3AC4263732D9001E6973 /* ViewController.swift */; };
+		1C4C3AC5263732D9001E6973 /* CalculateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4C3AC4263732D9001E6973 /* CalculateVC.swift */; };
 		1C4C3AC8263732D9001E6973 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C4C3AC6263732D9001E6973 /* Main.storyboard */; };
 		1C4C3ACA263732E0001E6973 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C4C3AC9263732E0001E6973 /* Assets.xcassets */; };
 		1C4C3ACD263732E0001E6973 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C4C3ACB263732E0001E6973 /* LaunchScreen.storyboard */; };
+		1C6A99B426388CF0005C8E35 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6A99B326388CF0005C8E35 /* Calculator.swift */; };
+		1C6A99B7263890F2005C8E35 /* BMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6A99B6263890F2005C8E35 /* BMI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C35D9A5263885BC0064FD95 /* ResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultVC.swift; sourceTree = "<group>"; };
 		1C4C3ABD263732D9001E6973 /* bmi-calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bmi-calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C4C3AC0263732D9001E6973 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C4C3AC2263732D9001E6973 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1C4C3AC4263732D9001E6973 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1C4C3AC4263732D9001E6973 /* CalculateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateVC.swift; sourceTree = "<group>"; };
 		1C4C3AC7263732D9001E6973 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1C4C3AC9263732E0001E6973 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C4C3ACC263732E0001E6973 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C4C3ACE263732E0001E6973 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C6A99B326388CF0005C8E35 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		1C6A99B6263890F2005C8E35 /* BMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,50 @@
 		1C4C3ABF263732D9001E6973 /* bmi-calculator */ = {
 			isa = PBXGroup;
 			children = (
-				1C4C3AC0263732D9001E6973 /* AppDelegate.swift */,
-				1C4C3AC2263732D9001E6973 /* SceneDelegate.swift */,
-				1C4C3AC4263732D9001E6973 /* ViewController.swift */,
-				1C4C3AC6263732D9001E6973 /* Main.storyboard */,
+				1C4C3ADB2637332F001E6973 /* Models */,
+				1C4C3AD72637330B001E6973 /* Views */,
+				1C4C3AD926373321001E6973 /* Controllers */,
+				1C4C3AD826373316001E6973 /* Other */,
 				1C4C3AC9263732E0001E6973 /* Assets.xcassets */,
-				1C4C3ACB263732E0001E6973 /* LaunchScreen.storyboard */,
 				1C4C3ACE263732E0001E6973 /* Info.plist */,
 			);
 			path = "bmi-calculator";
+			sourceTree = "<group>";
+		};
+		1C4C3AD72637330B001E6973 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1C4C3ACB263732E0001E6973 /* LaunchScreen.storyboard */,
+				1C4C3AC6263732D9001E6973 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1C4C3AD826373316001E6973 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				1C4C3AC0263732D9001E6973 /* AppDelegate.swift */,
+				1C4C3AC2263732D9001E6973 /* SceneDelegate.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		1C4C3AD926373321001E6973 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1C4C3AC4263732D9001E6973 /* CalculateVC.swift */,
+				1C35D9A5263885BC0064FD95 /* ResultVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1C4C3ADB2637332F001E6973 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1C6A99B326388CF0005C8E35 /* Calculator.swift */,
+				1C6A99B6263890F2005C8E35 /* BMI.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +178,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C4C3AC5263732D9001E6973 /* ViewController.swift in Sources */,
+				1C4C3AC5263732D9001E6973 /* CalculateVC.swift in Sources */,
+				1C35D9A6263885BC0064FD95 /* ResultVC.swift in Sources */,
 				1C4C3AC1263732D9001E6973 /* AppDelegate.swift in Sources */,
+				1C6A99B426388CF0005C8E35 /* Calculator.swift in Sources */,
+				1C6A99B7263890F2005C8E35 /* BMI.swift in Sources */,
 				1C4C3AC3263732D9001E6973 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +333,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9YBQ5S77GM;
 				INFOPLIST_FILE = "bmi-calculator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +353,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9YBQ5S77GM;
 				INFOPLIST_FILE = "bmi-calculator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
